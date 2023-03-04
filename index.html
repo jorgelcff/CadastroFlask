@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Cadastrar Produto</title>
+</head>
+<body>
+    <h1>Cadastrar Produto</h1>
+    <form method="post" action="/cadastrar">
+        <label>Nome:</label>
+        <input type="text" name="nome"><br>
+
+        <label>Descrição:</label>
+        <textarea name="descricao"></textarea><br>
+
+        <label>Valor:</label>
+        <input type="number" name="valor" step="0.01"><br>
+
+        <label>Disponível para venda:</label>
+        <input type="radio" name="disponivel" value="sim">Sim
+        <input type="radio" name="disponivel" value="nao">Não<br>
+
+        <input type="submit" value="Cadastrar">
+    </form>
+    <a href="/listar">Voltar para listagem de produtos</a>
+</body>
+</html>
